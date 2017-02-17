@@ -29,7 +29,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tipo": {
+      "type": "belongsTo",
+      "model": "tipo",
+      "foreignKey": "id_tipo"
+    }
+  },
   "acls": [],
   "methods": {}
 }
