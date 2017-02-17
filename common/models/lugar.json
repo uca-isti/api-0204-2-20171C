@@ -1,0 +1,50 @@
+{
+  "name": "lugar",
+  "plural": "lugares",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_lugar": {
+      "type": "number",
+      "required": true
+    },
+    "latitud": {
+      "type": "string",
+      "required": true
+    },
+    "longitud": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "horaApertura": {
+      "type": "string"
+    },
+    "horaCierre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
