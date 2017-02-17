@@ -7,11 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "id_menu": {
+    "menu_id": {
       "type": "number",
       "required": true
     },
-    "id_lugar": {
+    "lugar_id": {
       "type": "number",
       "required": true
     },
@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "id_tipo": {
+    "tipo_id": {
       "type": "number",
       "required": true
     },
@@ -29,7 +29,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "lugar": {
+      "type": "belongsTo",
+      "model": "lugar",
+      "foreignKey": "lugar_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
