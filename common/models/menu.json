@@ -30,17 +30,14 @@
   },
   "validations": [],
   "relations": {
-<<<<<<< HEAD
     "lugar": {
       "type": "belongsTo",
       "model": "lugar",
-      "foreignKey": "lugar_id"
-=======
+      "foreignKey": "id_lugar"
     "tipo": {
       "type": "belongsTo",
       "model": "tipo",
       "foreignKey": "id_tipo"
->>>>>>> eac36637629fb26ca54216f3c77f40eeac1b331a
     }
   },
   "acls": [],
