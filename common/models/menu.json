@@ -1,0 +1,35 @@
+{
+  "name": "menu",
+  "plural": "menues",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_menu": {
+      "type": "number",
+      "required": true
+    },
+    "id_lugar": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "id_tipo": {
+      "type": "number",
+      "required": true
+    },
+    "precio": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
