@@ -1,0 +1,23 @@
+{
+  "name": "tipo",
+  "plural": "tipos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_tipo": {
+      "type": "number",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

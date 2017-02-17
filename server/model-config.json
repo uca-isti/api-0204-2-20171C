@@ -32,7 +32,14 @@
     "dataSource": "db",
     "public": false
   },
-  "lugar": {
+
+  "lugar":  {
+
+    "dataSource": "db",
+    "public": true
+  },
+  "tipo": {
+
     "dataSource": "db",
     "public": true
   }
