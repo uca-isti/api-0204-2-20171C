@@ -22,7 +22,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "lugar": {
+      "type": "belongsTo",
+      "model": "lugar",
+      "foreignKey": "id_FavoritosLugar"
+    }
+  },
   "acls": [],
   "methods": {}
 }
