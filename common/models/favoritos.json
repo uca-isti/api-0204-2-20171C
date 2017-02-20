@@ -17,7 +17,7 @@
     "lugar_id": {
       "type": "number"
     },
-    "comida_id": {
+    "menu_id": {
       "type": "number"
     }
   },
