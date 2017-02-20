@@ -32,15 +32,11 @@
     "dataSource": "db",
     "public": false
   },
-  "menu": {
-    "dataSource": "db",
-    "public": true
-  },
   "lugar": {
     "dataSource": "db",
     "public": true
   },
-  "tipo": {
+  "menu": {
     "dataSource": "db",
     "public": true
   },
@@ -48,7 +44,11 @@
     "dataSource": "db",
     "public": true
   },
-  "favoritos": {
+  "favorito": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tipo": {
     "dataSource": "db",
     "public": true
   }

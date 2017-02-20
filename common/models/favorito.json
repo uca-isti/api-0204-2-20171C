@@ -1,5 +1,5 @@
 {
-  "name": "favoritos",
+  "name": "favorito",
   "plural": "favoritos",
   "base": "PersistedModel",
   "idInjection": true,
@@ -7,17 +7,17 @@
     "validateUpsert": true
   },
   "properties": {
-    "favorito_id": {
+    "id_favorito": {
       "type": "number",
       "required": true
     },
     "usuario": {
       "type": "string"
     },
-    "lugar_id": {
+    "id_lugar": {
       "type": "number"
     },
-    "menu_id": {
+    "id_menu": {
       "type": "number"
     }
   },
@@ -26,7 +26,12 @@
     "lugar": {
       "type": "belongsTo",
       "model": "lugar",
-      "foreignKey": "id_FavoritosLugar"
+      "foreignKey": "id_favoritoLugar"
+    },
+    "menu": {
+      "type": "belongsTo",
+      "model": "menu",
+      "foreignKey": "id_favoritoMenu"
     }
   },
   "acls": [],

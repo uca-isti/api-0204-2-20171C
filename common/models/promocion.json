@@ -15,7 +15,7 @@
       "type": "number",
       "required": true
     },
-    "nomnbre": {
+    "nombre": {
       "type": "string",
       "required": true
     },
@@ -24,26 +24,18 @@
       "required": true
     },
     "activo": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "fechaInicio": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "fechaFinal": {
-      "type": "date",
-      "required": true
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {
-    "lugar": {
-      "type": "belongsTo",
-      "model": "lugar",
-      "foreignKey": "id_promocionLugar"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

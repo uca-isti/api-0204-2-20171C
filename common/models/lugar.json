@@ -12,12 +12,10 @@
       "required": true
     },
     "latitud": {
-      "type": "string",
-      "required": true
+      "type": "geopoint"
     },
     "longitud": {
-      "type": "string",
-      "required": true
+      "type": "geopoint"
     },
     "nombre": {
       "type": "string",

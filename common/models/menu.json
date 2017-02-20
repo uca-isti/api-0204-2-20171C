@@ -7,11 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "menu_id": {
+    "id_menu": {
       "type": "number",
       "required": true
     },
-    "lugar_id": {
+    "id_lugar": {
       "type": "number",
       "required": true
     },
@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "tipo_id": {
+    "id_tipo": {
       "type": "number",
       "required": true
     },
@@ -33,18 +33,12 @@
     "lugar": {
       "type": "belongsTo",
       "model": "lugar",
-      "foreignKey": "id_lugar",
-      "tipo": {
-        "type": "belongsTo",
-        "model": "tipo",
-        "foreignKey": "id_tipo"
-      }
+      "foreignKey": "id_menuLugar"
     },
-    "methods": {},
-    "favoritos": {
-      "type": "hasMany",
-      "model": "favoritos",
-      "foreignKey": "menu_id"
+    "tipo": {
+      "type": "belongsTo",
+      "model": "tipo",
+      "foreignKey": "id_menuTipo"
     }
   },
   "acls": [],
