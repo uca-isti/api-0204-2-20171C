@@ -47,5 +47,9 @@
   "promocion": {
     "dataSource": "db",
     "public": true
+  },
+  "favoritos": {
+    "dataSource": "db",
+    "public": true
   }
 }

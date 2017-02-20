@@ -1,0 +1,28 @@
+{
+  "name": "favoritos",
+  "plural": "favoritos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "favorito_id": {
+      "type": "number",
+      "required": true
+    },
+    "usuario": {
+      "type": "string"
+    },
+    "lugar_id": {
+      "type": "number"
+    },
+    "comida_id": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
