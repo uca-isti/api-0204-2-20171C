@@ -40,7 +40,12 @@
         "foreignKey": "id_tipo"
       }
     },
-    "methods": {}
+    "methods": {},
+    "favoritos": {
+      "type": "hasMany",
+      "model": "favoritos",
+      "foreignKey": "menu_id"
+    }
   },
   "acls": [],
   "methods": {}
