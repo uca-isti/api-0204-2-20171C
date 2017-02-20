@@ -43,5 +43,9 @@
   "tipo": {
     "dataSource": "db",
     "public": true
+  },
+  "promocion": {
+    "dataSource": "db",
+    "public": true
   }
 }
