@@ -7,10 +7,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "id_menu": {
-      "type": "number",
-      "required": true
-    },
+
     "id_lugar": {
       "type": "number",
       "required": true
