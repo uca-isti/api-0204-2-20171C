@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     'loopback_auto': {
       'db_autoupdate': {
         options: {
-          dataSource: 'database',
+          dataSource: 'db',
           app: './server/server',
           config: './server/model-config',
           method: 'autoupdate'
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       'db_automigrate': {
         options: {
-          dataSource: 'database',
+          dataSource: 'db',
           app: './server/server',
           config: './server/model-config',
           method: 'automigrate'
@@ -21,5 +21,5 @@ module.exports = function(grunt) {
   });
   // Load the plugin
   grunt.loadNpmTasks('grunt-loopback-auto');
-  grunt.registerTask('default', ['loopback_auto']);
+  grunt.registerTask('default', ['loopback_auto:db_autoupdate']);
 };
