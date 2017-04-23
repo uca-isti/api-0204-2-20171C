@@ -16,7 +16,7 @@
       "required": true
     },
     "cover":{
-      "type": "string",
+      "type": "string"
     },
     "location": {
       "type": "geopoint",
