@@ -1,6 +1,6 @@
 {
-  "name": "menu",
-  "plural": "menus",
+  "name": "place",
+  "plural": "places",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,31 +12,24 @@
       "required": true
     },
     "description": {
-      "type": "string"
-    },
-    "price": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
-    "type_id": {
-      "type": "number",
-      "required": true
-    },
-    "place_id": {
-      "type": "number",
+    "location": {
+      "type": "geopoint",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "type": {
+    "placeSchedule": {
       "type": "belongsTo",
-      "model": "type",
-      "foreignKey": "type_id"
+      "model": "place_schedule",
+      "foreignKey": "place_id"
     },
-    "place": {
+    "placeContact": {
       "type": "belongsTo",
-      "model": "place",
+      "model": "place_contact",
       "foreignKey": "place_id"
     }
   },

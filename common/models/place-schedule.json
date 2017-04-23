@@ -1,15 +1,18 @@
 {
-  "name": "tipo",
-  "plural": "tipos",
+  "name": "place_schedule",
+  "plural": "places_schedules",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-
-    "tipo": {
+    "text": {
       "type": "string",
+      "required": true
+    },
+    "place_id": {
+      "type": "number",
       "required": true
     }
   },

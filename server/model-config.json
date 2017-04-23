@@ -32,7 +32,23 @@
     "dataSource": "db",
     "public": false
   },
-  "lugar": {
+  "place": {
+    "dataSource": "db",
+    "public": true
+  },
+  "place_schedule": {
+    "dataSource": "db",
+    "public": true
+  },
+  "promotion": {
+    "dataSource": "db",
+    "public": true
+  },
+  "favorite": {
+    "dataSource": "db",
+    "public": true
+  },
+  "place_contact": {
     "dataSource": "db",
     "public": true
   },
@@ -40,15 +56,11 @@
     "dataSource": "db",
     "public": true
   },
-  "promocion": {
+  "profile": {
     "dataSource": "db",
     "public": true
   },
-  "favorito": {
-    "dataSource": "db",
-    "public": true
-  },
-  "tipo": {
+  "type": {
     "dataSource": "db",
     "public": true
   }

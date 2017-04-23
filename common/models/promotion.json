@@ -1,6 +1,6 @@
 {
-  "name": "menu",
-  "plural": "menus",
+  "name": "promotion",
+  "plural": "promotions",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -14,32 +14,25 @@
     "description": {
       "type": "string"
     },
-    "price": {
+    "dateStart": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date",
+      "required": true
+    },
+    "Menu_id": {
       "type": "number",
       "required": true
     },
-    "type_id": {
-      "type": "number",
-      "required": true
-    },
-    "place_id": {
+    "Place_id": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "type": {
-      "type": "belongsTo",
-      "model": "type",
-      "foreignKey": "type_id"
-    },
-    "place": {
-      "type": "belongsTo",
-      "model": "place",
-      "foreignKey": "place_id"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

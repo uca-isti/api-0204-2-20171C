@@ -1,0 +1,34 @@
+{
+  "name": "favorite",
+  "plural": "favorites",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Menu_id": {
+      "type": "number",
+      "required": true
+    },
+    "Profile_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "menu": {
+      "type": "belongsTo",
+      "model": "menu",
+      "foreignKey": "menu_id"
+    },
+    "profile": {
+      "type": "belongsTo",
+      "model": "profile",
+      "foreignKey": "profile_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
